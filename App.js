@@ -1,10 +1,22 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View, ScrollView } from "react-native";
 
-export default function App() {
+import Header from "./src/components/Header";
+import SubHeader from "./src/components/SubHeader";
+import ProductList from "./src/components/ProductList";
+import Tabs from "./src/components/Tabs";
+
+import "./src/config/reactotronConfig";
+
+function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Header />
+      <ScrollView>
+        <SubHeader />
+        <ProductList />
+      </ScrollView>
+      <Tabs />
     </View>
   );
 }
@@ -12,8 +24,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#f8f8fa",
   },
 });
+
+export default console.tron.overlay(App);
