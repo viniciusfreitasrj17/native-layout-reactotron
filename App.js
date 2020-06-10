@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import Header from "./src/components/Header";
 import SubHeader from "./src/components/SubHeader";
@@ -12,10 +13,10 @@ function App() {
   return (
     <View style={styles.container}>
       <Header />
-      <ScrollView>
+      <SafeAreaProvider>
         <SubHeader />
         <ProductList />
-      </ScrollView>
+      </SafeAreaProvider>
       <Tabs />
     </View>
   );

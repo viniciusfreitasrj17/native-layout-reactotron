@@ -5,9 +5,9 @@ const { width } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.white,
+    backgroundColor: colors.darker,
     borderRadius: 3,
-    marginBottom: metrics.padding,
+    margin: metrics.padding,
     shadowColor: colors.light,
     shadowRadius: 2,
     shadowOpacity: 0.1,

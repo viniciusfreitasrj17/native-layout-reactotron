@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, FlatList } from "react-native";
+import { FlatList } from "react-native";
+import SafeAreaView from "react-native-safe-area-view";
 
 import styles from "./styles";
 import Product from "./Product";
@@ -41,13 +42,14 @@ const ProductList = () => {
   ]);
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <FlatList
         data={products}
         keyExtractor={(item) => item.id}
         renderItem={Product}
+        numColumns={2}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
