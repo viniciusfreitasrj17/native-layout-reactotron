@@ -10,7 +10,7 @@ const ProductList = () => {
     {
       id: 1,
       image:
-        "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=28010875",
+        "https://static.zattini.com.br/produtos/sapato-vizzano-salto-alto/06/E11-2528-006/E11-2528-006_zoom1.jpg?ts=1585161467&ims=544x",
       title: "Acne Studios",
       description: "Andrea nappa dusty pink",
       price: "R$50,00",
@@ -26,7 +26,7 @@ const ProductList = () => {
     {
       id: 3,
       image:
-        "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=28010875",
+        "https://static.zattini.com.br/produtos/sapato-vizzano-salto-alto/06/E11-2528-006/E11-2528-006_zoom1.jpg?ts=1585161467&ims=544x",
       title: "Acne Studios",
       description: "Andrea nappa dusty pink",
       price: "R$30,00",

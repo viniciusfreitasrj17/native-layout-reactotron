@@ -13,10 +13,12 @@ function App() {
   return (
     <View style={styles.container}>
       <Header />
-      <SafeAreaProvider>
-        <SubHeader />
-        <ProductList />
-      </SafeAreaProvider>
+      <ScrollView>
+        <SafeAreaProvider>
+          <SubHeader />
+          <ProductList />
+        </SafeAreaProvider>
+      </ScrollView>
       <Tabs />
     </View>
   );

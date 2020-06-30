@@ -3,7 +3,7 @@ import { colors, metrics, fonts } from "../../styles";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.white,
+    backgroundColor: "rgba(255, 255, 255, 0.5)",
     height: metrics.tabBarHeight,
     paddingHorizontal: metrics.padding,
     borderTopWidth: 1,
